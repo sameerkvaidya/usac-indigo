@@ -1,0 +1,148 @@
+//Mixins
+
+@mixin heading-level-1() {
+    color: $indi-color-blue-48;
+    font-family: $indi-font-family-sans-serif;
+    font-size: $indi-font-size-heading-level-1-xs;
+    font-weight: $indi-font-weight-light;
+    line-height: $indi-font-line-height-heading-level-1-xs;
+
+    @media screen and (min-width: $indi-breakpoints-tablet-portrait) {
+        font-size: $indi-font-size-heading-level-1-s;
+        line-height: $indi-font-line-height-heading-level-1-s;
+    }
+
+    @media screen and (min-width: $indi-breakpoints-desktop-portrait) {
+        font-size: $indi-font-size-heading-level-1-l;
+        line-height: $indi-font-line-height-heading-level-1-l;
+    }
+}
+
+@mixin heading-level-2() {
+    color: $indi-text-color-secondary-default;
+    font-family: $indi-font-family-sans-serif;
+    font-size: $indi-font-size-heading-level-2-xs;
+    font-weight: $indi-font-weight-bold;
+    line-height: $indi-font-line-height-heading-level-2-xs;
+
+    @media screen and (min-width: $indi-breakpoints-tablet-portrait) {
+        font-size: $indi-font-size-heading-level-2-s;
+        line-height: $indi-font-line-height-heading-level-2-s;
+    }
+
+    @media screen and (min-width: $indi-breakpoints-desktop-portrait) {
+        font-size: $indi-font-size-heading-level-2-l;
+        line-height: $indi-font-line-height-heading-level-2-l;
+    }
+}
+
+@mixin heading-level-3() {
+    color: $indi-text-color-primary-default;
+    font-family: $indi-font-family-sans-serif;
+    font-size: $indi-font-size-heading-level-3-xs;
+    font-weight: $indi-font-weight-normal;
+    line-height: $indi-font-line-height-heading-level-3-xs;
+
+    @media screen and (min-width: $indi-breakpoints-tablet-portrait) {
+        font-size: $indi-font-size-heading-level-3-s;
+        line-height: $indi-font-line-height-heading-level-3-s;
+    }
+
+    @media screen and (min-width: $indi-breakpoints-desktop-portrait) {
+        font-size: $indi-font-size-heading-level-3-l;
+        line-height: $indi-font-line-height-heading-level-3-l;
+    }
+}
+
+@mixin heading-level-4() {
+    color: $indi-text-color-primary-default;
+    font-family: $indi-font-family-sans-serif;
+    font-size: $indi-font-size-heading-level-4-xs;
+    font-weight: $indi-font-weight-bold;
+    line-height: $indi-font-line-height-heading-level-4-xs;
+
+    @media screen and (min-width: $indi-breakpoints-tablet-portrait) {
+        font-size: $indi-font-size-heading-level-4-s;
+        line-height: $indi-font-line-height-heading-level-4-s;
+    }
+
+    @media screen and (min-width: $indi-breakpoints-desktop-portrait) {
+        font-size: $indi-font-size-heading-level-4-l;
+        line-height: $indi-font-line-height-heading-level-4-l;
+    }
+}
+
+@mixin heading-level-5() {
+    color: $indi-text-color-primary-default;
+    font-family: $indi-font-family-sans-serif;
+    font-size: $indi-font-size-heading-level-5-xs;
+    font-weight: $indi-font-weight-bold;
+    line-height: $indi-font-line-height-heading-level-5-xs;
+
+    @media screen and (min-width: $indi-breakpoints-tablet-portrait) {
+        font-size: $indi-font-size-heading-level-5-s;
+        line-height: $indi-font-line-height-heading-level-5-l;
+    }
+
+    @media screen and (min-width: $indi-breakpoints-desktop-portrait) {
+        font-size: $indi-font-size-heading-level-5-l;
+    }
+}
+
+@mixin heading-level-6() {
+    color: $indi-text-color-primary-default;
+    font-family: $indi-font-family-sans-serif;
+    font-size: $indi-font-size-heading-level-6-xs;
+    font-weight: $indi-font-weight-normal;
+    line-height: $indi-font-line-height-heading-level-6-xs;
+
+    @media screen and (min-width: $indi-breakpoints-tablet-portrait) {
+        font-size: $indi-font-size-heading-level-6-l;
+        line-height: $indi-font-line-height-heading-level-6-l;
+    }
+}
+
+@mixin paragraph() {
+    color: $indi-text-color-primary-default;
+    font-family: $indi-font-family-sans-serif;
+    font-size: $indi-font-size-m;
+    font-weight: $indi-font-weight-light;
+    line-height: $indi-font-line-height-s;
+
+    @media screen and (min-width: $indi-breakpoints-tablet-portrait) {
+        font-size: $indi-font-size-l;
+        line-height: $indi-font-line-height-m;
+    }
+
+    @media screen and (min-width: $indi-breakpoints-desktop-portrait) {
+        line-height: $indi-font-line-height-l;
+    }
+}
+
+@mixin link() {
+    color: $indi-color-interactive-default;
+    fill: $indi-color-interactive-default;
+    text-decoration: none;
+
+    &:hover {
+        color: $indi-color-interactive-hover;
+        fill: $indi-color-interactive-hover;
+    }
+}
+
+@mixin button-reset() {
+    background: none;
+    border: 0;
+    color: $indi-color-interactive-default;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: inherit;
+
+    &:hover {
+        color: $indi-color-interactive-hover;
+    }
+}

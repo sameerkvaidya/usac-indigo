@@ -1,0 +1,10 @@
+@import 'indi_tokens';
+
+// Import component print-specific styles
+@import 'button/button--print';
+
+// Put print-specific global styles here
+html,
+body {
+    background: transparent;
+}
